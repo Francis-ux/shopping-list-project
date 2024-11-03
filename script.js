@@ -46,8 +46,16 @@ function removeItem(e) {
   }
 }
 
+/**
+ * Removes all items from the list by removing all child elements of the
+ * itemList element.
+ */
+
 function clearItems() {
+  // Loop through all the elements of the itemList and remove them one by one
+  // until the list is empty
   while (itemList.firstChild) {
+    // Remove the first element of the list
     itemList.removeChild(itemList.firstChild);
   }
 }
